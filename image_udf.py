@@ -1,4 +1,4 @@
-# Databricks notebook source
+
 %pip install opencv-python
 
 # COMMAND ----------
