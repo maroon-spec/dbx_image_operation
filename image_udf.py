@@ -50,3 +50,5 @@ image_df.show(3)
 
 # COMMAND ----------
 
+display(image_df.select("size"))
+
