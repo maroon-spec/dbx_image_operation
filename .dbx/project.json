@@ -1,0 +1,14 @@
+{
+    "environments": {
+        "azure-demo": {
+            "profile": "azure-demo",
+            "storage_type": "mlflow",
+            "properties": {
+                "workspace_directory": "/Shared/dbx/projects/dbx_image_operation",
+                "artifact_location": "dbfs:/dbx/dbx_image_operation"
+            }
+        }
+    },
+    "inplace_jinja_support": false,
+    "failsafe_cluster_reuse_with_assets": false
+}

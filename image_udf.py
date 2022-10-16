@@ -15,7 +15,7 @@ image_df = (spark.read
 )
 
 # display関数は、イメージを表示してくれます。
-display(image_df) 
+#display(image_df) 
 
 # COMMAND ----------
 
@@ -45,8 +45,8 @@ def extract_size_udf(content_series):
 # COMMAND ----------
 
 # Apply UDF to 'content' columns of binary data. 
-display(image_df.select('content',extract_size_udf("content").alias("size")))
+image_df = image_df.select('content',extract_size_udf("content").alias("size"))
+image_df.show(3)
 
 # COMMAND ----------
-
 
